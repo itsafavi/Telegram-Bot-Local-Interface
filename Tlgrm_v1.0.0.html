@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8" />
+<title>Telegram</title>
+<style type="text/css">
+.auto-style1 {
+	background-color: #C0C0C0;
+}
+.auto-style2 {
+	background-color: #A7D1D1;
+}
+.auto-style3 {
+	background-color: #C7B2D1;
+}
+</style>
+</head>
+
+<body background="file:///C:/icons/background/telegram1.jpg">
+
+<form action="https://api.telegram.org/bot-TOKEN-/sendVideo" enctype="multipart/form-data" method="post">
+<fieldset class="auto-style3">
+	<legend class="auto-style3">sendVideo:</legend>
+	<button type="submit">Submit</button>  | Channel:
+	<input name="chat_id" type="text" value="@EnglishBoosterGP"> |
+	<input name="video" type="file"> | Durtion:
+	<input name="duration" type="number" value="">*seconds |
+	<select name="disable_notification">
+	<option value="True">Disable Notification</option>
+	<option value="False">Enable Notification</option>
+	</select><br><br>Caption: <textarea cols="100" name="caption" rows="5"></textarea>*0-200 
+	characters<br><br></fieldset>
+</form><br><br>
+<form action="https://api.telegram.org/bot-TOKEN-/sendAudio" enctype="multipart/form-data" method="post">
+	<fieldset class="auto-style2">
+	<legend class="auto-style2">sendAudio:</legend>
+	<button type="submit">Submit</button>  | Channel:  
+	<input name="chat_id" type="text" value="@EnglishBoosterGP">
+	<input name="audio" type="file">  |  Duration:
+	<input name="duration" type="number" value="">*seconds  |  Performer:
+	<input name="performer" type="text" value="">  |  TrackName:
+	<input name="title" type="text" value="">	
+	</fieldset>
+</form><br><br>
+<form action="https://api.telegram.org/bot-TOKEN-/sendMessage" enctype="application/x-www-form-urlencoded" method="post" parse_mode="HTML">
+	<fieldset class="auto-style1">
+	<legend class="auto-style1">sendMessage:</legend>
+	<button type="submit">Submit</button>  |  
+	Channel: <input name="chat_id" type="text" value="@EnglishBoosterGP">  |  
+	<select name="parse_mode">
+	<option value="HTML">HTML</option>
+	<option value="Markdown">Markdown</option>
+	</select> | <select name="disable_web_page_preview">
+	<option value="True">Disable Preview</option>
+	<option value="False">Enable Preview</option>
+	</select> | <select name="disable_notification">
+	<option value="True">Disable Notification</option>
+	<option value="False">Enable Notification</option>
+	</select><br>
+	<br>YouText: <textarea cols="100" name="text" rows="25"></textarea>
+		</fieldset>
+</form>
+<br>Copyright: [Telegram@sHosseinSafavi]<br>Don't Forget to change the api and channel!
+</body>
+
+</html>
